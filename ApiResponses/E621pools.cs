@@ -1,4 +1,6 @@
-﻿namespace E621_Wrapper
+﻿using System.Collections.Generic;
+
+namespace E621_Wrapper
 {
     public class E621pools
     {
@@ -21,4 +23,5 @@
 
         public int[] post_ids { get; set; }
     }
+
 }

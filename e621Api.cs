@@ -65,7 +65,7 @@ namespace E621_Wrapper
         public async Task<Singlepost> Get_Id(int id)
         {
             MemoryStream e621 = await $"https://e621.net/posts/{id}.json".Deserializetion(e621Client);
-            Console.WriteLine(Encoding.ASCII.GetString(e621.ToArray()));
+            
            var post = await JsonSerializer.DeserializeAsync<Singlepost>(e621);
 
             

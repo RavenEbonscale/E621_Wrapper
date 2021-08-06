@@ -35,8 +35,8 @@ namespace E621_Wrapper
                     return client;
                 }
             }
-
-            public async Task<List<E621json>> Get_Posts(string tags, int pages)
+            //Gets a list of JSON Respones based on
+            public List<E621json> Get_Posts(string tags, int pages)
             {
                 List<E621json> e621posts = new List<E621json>();
                 Parallel.For(1, pages, async page =>

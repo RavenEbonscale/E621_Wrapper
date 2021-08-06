@@ -2,14 +2,14 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
-    <RootNamespace>E621_Wrapper</RootNamespace>
-    <AssemblyName>E621_Wrapper</AssemblyName>
+    <RootNamespace>E621_Api</RootNamespace>
+    <AssemblyName>E621_Api</AssemblyName>
     <ApplicationIcon />
     <OutputType>Library</OutputType>
     <StartupObject />
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <AssemblyVersion>1.1.0.0</AssemblyVersion>
-    <Version>1.1</Version>
+    <Version>1.3</Version>
     <FileVersion>1.1.0.0</FileVersion>
     <PackageId>E621.Wrapper</PackageId>
     <Authors>Raven Ebonscale</Authors>
@@ -19,6 +19,7 @@
     <NeutralLanguage>English</NeutralLanguage>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryUrl>https://github.com/RavenEbonscale/E621_Wrapper</RepositoryUrl>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
