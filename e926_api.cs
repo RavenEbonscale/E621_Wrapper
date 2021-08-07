@@ -39,7 +39,7 @@ namespace E621_Wrapper
             public List<E621json> Get_Posts(string tags, int pages)
             {
                 List<E621json> e621posts = new List<E621json>();
-                Parallel.For(1, pages, async page =>
+                Parallel.For(0, pages, async page =>
                 {
                     using (MemoryStream e621 = await $"https://e926.net/posts.json?page={page}&tags={tags}".Deserializetion(e926Client))
                     {
