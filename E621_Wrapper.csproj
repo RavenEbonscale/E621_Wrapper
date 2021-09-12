@@ -8,18 +8,22 @@
     <OutputType>Library</OutputType>
     <StartupObject />
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <AssemblyVersion>1.3.1.1</AssemblyVersion>
-    <Version>1.3.2</Version>
-    <FileVersion>1.3.1.1</FileVersion>
+    <AssemblyVersion>1.3.4</AssemblyVersion>
+    <Version>1.3.4</Version>
+    <FileVersion>1.3.4</FileVersion>
     <PackageId>E621.Wrapper</PackageId>
     <Authors>Raven Ebonscale</Authors>
     <Product>E621 Wraper</Product>
     <Description>An E621 Wrapper for intreacting with the E621 API</Description>
     <Copyright>Copyright (c) Raven Ebonscale 2021</Copyright>
-    <NeutralLanguage>English</NeutralLanguage>
+    <NeutralLanguage>en-US</NeutralLanguage>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <RepositoryUrl>https://github.com/RavenEbonscale/E621_Wrapper</RepositoryUrl>
+    <PackageIcon>sticker wut.png</PackageIcon>
+    <PackageTags>E621; Furry</PackageTags>
+    <PackageReleaseNotes>Simplified usage for E926</PackageReleaseNotes>
+    <SignAssembly>False</SignAssembly>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
@@ -28,5 +32,16 @@
     <DebugType>full</DebugType>
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="e621Api.cs~RF1fced2.TMP" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\..\Yiff\pictures\Commisions\sticker wut.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
 
 </Project>
