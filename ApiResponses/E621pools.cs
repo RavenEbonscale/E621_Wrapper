@@ -23,5 +23,20 @@ namespace E621_Wrapper
 
         public int[] post_ids { get; set; }
     }
+    public class E621poolid
+    {
 
-}
+            public int id { get; set; }
+            public string name { get; set; }
+            
+            public string description { get; set; }
+            public bool is_active { get; set; }
+            public string catergory { get; set; }
+            public bool is_deleted { get; set; }
+            public int[] post_ids { get; set; }
+           
+
+        } 
+    } 
+
+

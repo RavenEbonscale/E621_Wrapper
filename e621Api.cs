@@ -57,11 +57,20 @@ namespace E621_Wrapper
 
             using (MemoryStream e621 = await $"https://e621.net/pools.json?search[name_matches]={pool}".Deserializetion(E621Client))
             {
-                var _pool = await JsonSerializer.DeserializeAsync<List<E621pools>>(e621);
+                List<E621pools> _pool = await JsonSerializer.DeserializeAsync<List<E621pools>>(e621);
                 pools.AddRange(_pool);
             }
 
             return pools;
+        }
+        ///Get a list of Pools based on a Id
+        public async Task<E621poolid> Get_PoolId(int poolId)
+        {
+
+            using MemoryStream e621 = await $"https://e621.net/pools/{poolId}.json?".Deserializetion(E621Client);
+            E621poolid _pool = await JsonSerializer.DeserializeAsync<E621poolid>(e621);
+
+            return _pool;
         }
 
         public async Task<Singlepost> Get_Id(int id)
